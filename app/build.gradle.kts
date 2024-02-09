@@ -1,7 +1,7 @@
 import java.util.Properties
-import com.awaken.generatebp.GenerateBpPlugin
-import com.awaken.generatebp.GenerateBpPluginExtension
-import com.awaken.generatebp.models.Module
+import com.horizon.generatebp.GenerateBpPlugin
+import com.horizon.generatebp.GenerateBpPluginExtension
+import com.horizon.generatebp.models.Module
 
 plugins {
     id("com.android.application")
@@ -18,7 +18,7 @@ buildscript {
     }
 
     dependencies {
-        classpath("com.awaken:gradle-generatebp:+")
+        classpath("com.horizon:gradle-generatebp:+")
     }
 }
 
@@ -33,7 +33,7 @@ android {
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.awaken.updater"
+        applicationId = "com.horizon.updater"
         minSdk = 30
         targetSdk = 33
         versionCode = 1
